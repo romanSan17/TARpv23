@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TARpv23", "TARpv23.csproj", "{C2193877-3110-4069-8CCB-57067227CD89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2193877-3110-4069-8CCB-57067227CD89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2193877-3110-4069-8CCB-57067227CD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2193877-3110-4069-8CCB-57067227CD89}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C2193877-3110-4069-8CCB-57067227CD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2193877-3110-4069-8CCB-57067227CD89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2193877-3110-4069-8CCB-57067227CD89}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D313966C-8FB3-45F5-A4AD-8E927D99FCB7}
+	EndGlobalSection
+EndGlobal
