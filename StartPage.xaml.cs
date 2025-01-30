@@ -32,4 +32,4 @@ public partial class StartPage : ContentPage
 		Button btn = (Button)sender;
 		await Navigation.PushAsync(lehed[btn.ZIndex]);
 	}
-}
+} 

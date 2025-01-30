@@ -7,9 +7,21 @@
     Shell.FlyoutBehavior="Disabled"
     Title="TARpv23">
 
+    <Shell.TitleView>
+        <Label
+            Text="Näidas"
+            FontFamily="luffio Regular 400"
+            FontSize="Title"
+            TextColor="DarkGoldenrod"
+            VerticalTextAlignment="Center"
+            VerticalOptions="Start"
+            Padding="25, 0, 0, 0"
+            HeightRequest="50"/>
+    </Shell.TitleView>
+
     <ShellContent
         Title="Avaleht"
         ContentTemplate="{DataTemplate local:StartPage}"
-        Route="MainPage" />
+        Route="StartPage" />
 
 </Shell>
