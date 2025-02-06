@@ -11,6 +11,9 @@
     <MauiXaml Update="FigurePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Valgusfoor.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="StartPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
