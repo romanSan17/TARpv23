@@ -17,7 +17,7 @@ public partial class TextPage : ContentPage
 			FontFamily = "Socafe 400",
 			FontAttributes = FontAttributes.Bold,
 			TextDecorations = TextDecorations.Underline,
-			HorizontalTextAlignment=TextAlignment.Center;
+			HorizontalTextAlignment=TextAlignment.Center,
 			VerticalTextAlignment=TextAlignment.Center,
 			FontSize=28,
 		};
@@ -70,4 +70,5 @@ public partial class TextPage : ContentPage
 			await Navigation.PushAsync(new FigurePage(btn.ZIndex));
 		}
 	}
+
 }

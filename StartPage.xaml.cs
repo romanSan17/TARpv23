@@ -1,19 +1,20 @@
 namespace TARpv23;
 
+
 public partial class StartPage : ContentPage
 {
     public List<ContentPage> lehed = new List<ContentPage>()
     {
         new TextPage(0),
         new FigurePage(1),
-        new Valgusfoor(2)
+        new ValgusfoorPage()
     };
 
     public List<string> tekstid = new List<string>
     {
         "Tee lahti TekstPage",
         "Tee lahti FigurePage",
-        "Tee lahti Valgusfoor"
+        "Tee lahti Valgusfoor" 
     };
 
     ScrollView sv;
@@ -29,14 +30,13 @@ public partial class StartPage : ContentPage
             Button nupp = new Button
             {
                 Text = tekstid[i],
-                BackgroundColor = Color.FromRgb(100 + (i * 30), 100, 20), 
+                BackgroundColor = Color.FromRgb(100 + (i * 30), 100, 20),
                 TextColor = Color.FromRgb(10, 160, 160),
                 BorderWidth = 2,
-                ZIndex = i, 
+                ZIndex = i,
                 FontFamily = "Arial"
             };
 
-            
             vsl.Add(nupp);
             nupp.Clicked += Lehte_avamine;
         }
