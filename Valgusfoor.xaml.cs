@@ -12,14 +12,14 @@ public partial class ValgusfoorPage : ContentPage
 
         messageLabel = new Label
         {
-            Text = "Kõigepealt lülita valgusfoor sisse",
+            Text = "KÃµigepealt lÃ¼lita valgusfoor sisse",
             HorizontalOptions = LayoutOptions.Center,
             FontSize = 20
         };
 
-        redLight = CreateLightFrame("punane", Colors.Gray);
-        yellowLight = CreateLightFrame("kollane", Colors.Gray);
-        greenLight = CreateLightFrame("roheline", Colors.Gray);
+        redLight = CreateLight("punane", Colors.Gray);
+        yellowLight = CreateLight("kollane", Colors.Gray);
+        greenLight = CreateLight("roheline", Colors.Gray);
 
         Button sisseButton = new Button
         {
@@ -30,7 +30,7 @@ public partial class ValgusfoorPage : ContentPage
 
         Button valjaButton = new Button
         {
-            Text = "VÄLJA",
+            Text = "VÃ„LJA",
             BackgroundColor = Colors.LightGray
         };
         valjaButton.Clicked += (s, e) => ToggleLights(false);
@@ -56,7 +56,7 @@ public partial class ValgusfoorPage : ContentPage
         };
     }
 
-    private Frame CreateLightFrame(string text, Color color)
+    private Frame CreateLight(string text, Color color)
     {
         var frame = new Frame
         {
@@ -82,7 +82,7 @@ public partial class ValgusfoorPage : ContentPage
     private void ToggleLights(bool turnOn)
     {
         isOn = turnOn;
-        messageLabel.Text = turnOn ? "Valgusfoor on sisse lülitatud" : "Kõigepealt lülita valgusfoor sisse";
+        messageLabel.Text = turnOn ? "Valgusfoor on sisse lÃ¼litatud" : "KÃµigepealt lÃ¼lita valgusfoor sisse";
         redLight.BackgroundColor = turnOn ? Colors.Red : Colors.Gray;
         yellowLight.BackgroundColor = turnOn ? Colors.Yellow : Colors.Gray;
         greenLight.BackgroundColor = turnOn ? Colors.Green : Colors.Gray;
@@ -92,7 +92,7 @@ public partial class ValgusfoorPage : ContentPage
     {
         if (!isOn)
         {
-            messageLabel.Text = "Kõigepealt lülita valgusfoor sisse";
+            messageLabel.Text = "KÃµigepealt lÃ¼lita valgusfoor sisse";
             return;
         }
 
