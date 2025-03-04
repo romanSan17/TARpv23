@@ -14,6 +14,9 @@
     <MauiXaml Update="FigurePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="RGBColorPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="StepperSliderPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -7,14 +7,14 @@ public partial class StepperSliderPage : ContentPage
     Stepper st;
     AbsoluteLayout abs;
 
-    public SliderStepperPage(int k)
+    public StepperSliderPage(int k)
     {
         lbl = new Label
         {
             BackgroundColor = Color.FromRgb(120, 144, 133),
             Text = "..."
-
         };
+
         sl = new Slider
         {
             Minimum = 0,
@@ -24,7 +24,8 @@ public partial class StepperSliderPage : ContentPage
             MaximumTrackColor = Color.FromRgb(0, 0, 0),
             ThumbColor = Color.FromRgb(155, 155, 155),
         };
-        sl.ValueChanged += Sl_ValueChanged;
+        sl.ValueChanged += SL_ValueChanged;
+
         st = new Stepper
         {
             Minimum = 0,
@@ -33,16 +34,17 @@ public partial class StepperSliderPage : ContentPage
             Value = 25,
             HorizontalOptions = LayoutOptions.CenterAndExpand
         };
+        st.ValueChanged += SL_ValueChanged;
 
-        st.ValueChanged += Sl_ValueChanged;
         abs = new AbsoluteLayout { Children = { lbl, sl, st } };
         AbsoluteLayout.SetLayoutBounds(lbl, new Rect(10, 100, 300, 50));
         AbsoluteLayout.SetLayoutBounds(sl, new Rect(10, 300, 300, 50));
         AbsoluteLayout.SetLayoutBounds(st, new Rect(10, 400, 300, 50));
-        Content abs;
+
+        Content = abs;
     }
 
-    private void SL_ValueChanged(object? sender, ValueChangedEventArgs e)
+    private void SL_ValueChanged(object sender, ValueChangedEventArgs e)
     {
         lbl.Text = string.Format("{0:F1}", e.NewValue);
         lbl.FontSize = e.NewValue;

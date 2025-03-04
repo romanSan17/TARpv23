@@ -1,5 +1,4 @@
-namespace TARpv23;
-
+using TARpv23;
 
 public partial class StartPage : ContentPage
 {
@@ -7,14 +6,20 @@ public partial class StartPage : ContentPage
     {
         new TextPage(0),
         new FigurePage(1),
-        new ValgusfoorPage()
+        new ValgusfoorPage(),
+        new DateTimePage(2),
+        new StepperSliderPage(3),
+        new RGBColorPage() 
     };
 
     public List<string> tekstid = new List<string>
     {
         "Tee lahti TekstPage",
         "Tee lahti FigurePage",
-        "Tee lahti Valgusfoor" 
+        "Tee lahti Valgusfoor",
+        "Tee lahti DateTimePage",
+        "Tee lahti StepperSliderPage",
+        "Tee lahti RGBColorPage" 
     };
 
     ScrollView sv;
